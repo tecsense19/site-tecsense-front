@@ -1490,6 +1490,10 @@ a.btn_talk.view-btn {
   width: 152px;
 }
 
+#quickLook-btn {
+  width: 180px;
+}
+
 .client_box {
   width: 100%;
   background: #FFFFFF;

@@ -90,14 +90,14 @@ const MegaMenu = ({ megaMenuActive }) => {
         </ul>
       </div>
       <div className="list-item">
-        <h4 class="title">Web Development</h4>
+        <h4 className="title">Web Development</h4>
         <ul>
-          <SubMenuItems imgurl1={SEOMenuIcon} imgurl2={SEOMegaIcon} title={'SEO Services'} onMouseEnter={hoverIconChangeHandler.Seo} />
-          <SubMenuItems imgurl1={SocialMediaMarketingMenuIcon} imgurl2={SocialMediaMarketingMegaIcon} title={'Social Media Marketing'} onMouseEnter={hoverIconChangeHandler.SocialMediaMArketing} />
-          <SubMenuItems imgurl1={PPCManagementMenuIcon} imgurl2={PPCManagementMegaIcon} title={'PPC Management'} onMouseEnter={hoverIconChangeHandler.PPC} />
-          <SubMenuItems imgurl1={ContentMarketingMenuIcon} imgurl2={ContentMarketingMegaIcon} title={'Content Marketing'} onMouseEnter={hoverIconChangeHandler.Content} />
+          <SubMenuItems imgurl1={SEOMenuIcon} imgurl2={SEOMegaIcon} title={'SEO Services'} onMouseEnter={hoverIconChangeHandler.Seo} serviceId={1} />
+          <SubMenuItems imgurl1={SocialMediaMarketingMenuIcon} imgurl2={SocialMediaMarketingMegaIcon} title={'Social Media Marketing'} onMouseEnter={hoverIconChangeHandler.SocialMediaMArketing} serviceId={2} />
+          <SubMenuItems imgurl1={PPCManagementMenuIcon} imgurl2={PPCManagementMegaIcon} title={'PPC Management'} onMouseEnter={hoverIconChangeHandler.PPC} serviceId={3} />
+          <SubMenuItems imgurl1={ContentMarketingMenuIcon} imgurl2={ContentMarketingMegaIcon} title={'Content Marketing'} onMouseEnter={hoverIconChangeHandler.Content} serviceId={4} />
         </ul>
-        <h4 class="title">Designing</h4>
+        <h4 className="title">Designing</h4>
         <ul>
           <SubMenuItems imgurl1={UIUXMenuIcon} imgurl2={UIUXMegaIcon} title={'UI/UX Design Services'} onMouseEnter={hoverIconChangeHandler.UIUX} />
           <SubMenuItems imgurl1={GraphicMenuIcon} imgurl2={GraphicMegaIcon} title={'Graphic Design'} onMouseEnter={hoverIconChangeHandler.Grafic} />
@@ -109,21 +109,21 @@ const MegaMenu = ({ megaMenuActive }) => {
       <div className="list-item contact-list">
         <ul >
           <li>
-            <a href="javascript:void(0)">
+            <a href="/">
               <span>
                 <img src={SkypeImage} alt="img" /> Tec-Sense
               </span>
             </a>
           </li>
           <li>
-            <a href="javascript:void(0)">
+            <a href="/">
               <span>
                 <img src={MailImage} alt="img" /> sales@tec-sense.com
               </span>
             </a>
           </li>
           <li>
-            <a href="javascript:void(0)">
+            <a href="/">
               <span>
                 <img src={Whatsapp} alt="img" /> (+91) 720-301-4145
               </span>

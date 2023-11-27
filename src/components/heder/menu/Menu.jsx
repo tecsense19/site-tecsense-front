@@ -73,14 +73,15 @@ const Menu = () => {
 
           <ul className="menu-main" onClick={handleMenuMainClick}>
             <li>
-              <a href="javascript:void(0)" onClick={() => {
-                 window.scrollTo({ top: 0, behavior: 'smooth' });
+              <a href='*' onClick={(e) => {
+                e.preventDefault()
+                window.scrollTo({ top: 0, behavior: 'smooth' });
                 navigate('/')
               }}>Home</a>
 
             </li>
             <li className="menu-item-has-children">
-              <a href="javascript:void(0)" onClick={() => setSubMenuActive((prev) => (prev === true ? false : true))}>
+              <a href='*' onClick={(e) => {e.preventDefault();setSubMenuActive((prev) => (prev === true ? false : true))}}>
                 Who we are <FontAwesomeIcon icon="fa-solid fa-angle-down" />
               </a>
               <div className={`sub-menu sub-nav ${subMenuActive ? 'active' : ''}`}>
@@ -93,16 +94,17 @@ const Menu = () => {
               </div>
             </li>
             <li className="menu-item-has-children">
-              <a href="javascript:void(0)">
+              <a href='*' onClick={(e) => e.preventDefault()}>
                 What we offer <FontAwesomeIcon icon="fa-solid fa-angle-down" onClick={() => setMegaMenuActive((prev) => (prev === true ? false : true))} />
               </a>
               <MegaMenu megaMenuActive={megaMenuActive} />
             </li>
             <li>
-              <a href="javascript:void(0)">Portfolio</a>
+              <a href='*' onClick={(e) => e.preventDefault()}>Portfolio</a>
             </li>
             <li>
-              <a href="javascript:void(0)" onClick={() => {
+              <a href='*' onClick={(e) => {
+                e.preventDefault();
                 window.scrollTo({ top: 0, behavior: 'smooth' });
                 navigate('/our-blog')
               }}>Blog</a>
@@ -115,8 +117,8 @@ const Menu = () => {
         </a>
 
       </div>
-      <div class="item-right">
-        <div class="mobile-menu-trigger" onClick={toggleMenu}>
+      <div className="item-right">
+        <div className="mobile-menu-trigger" onClick={toggleMenu}>
           <span></span>
         </div>
       </div>

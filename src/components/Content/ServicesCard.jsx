@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Aos from 'aos';
-import { Link, useParams  } from 'react-router-dom';
+import { Link, useNavigate, useParams  } from 'react-router-dom';
 
 
-const ServicesCard = ({ id,service_title, service_description, service_images }) => {
+const ServicesCard = ({ id,service_title, service_description, service_images, serviceId }) => {
 
+    const navigate=useNavigate
 
     return service_title && (
         <div
@@ -33,7 +34,9 @@ const ServicesCard = ({ id,service_title, service_description, service_images })
                         )
                     })}
                 </ul>
-                <Link className="btn_talk read_more" to={`/services/${id}`} title="Read More">
+                <Link className="btn_talk read_more" to={`/services/${serviceId+1}`} onClick={(e) => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }} title="Read More">
                     Read More
                     <span>
                         <FontAwesomeIcon icon="fa-solid fa-arrow-right-long" />

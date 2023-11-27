@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Menu from './menu/Menu'
 import LoGo from "./../../image/logo.png"
-
-
+import { useNavigate } from 'react-router-dom';
 
 const Heder = () => {
+  const navigate = useNavigate()
   const [isSticky, setIsSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -30,7 +30,11 @@ const Heder = () => {
         <div className="v-center">
           <div className="header-item item-left">
             <div className="logo">
-              <a href="*">
+              <a href='*' onClick={(e) => {
+                e.preventDefault()
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                navigate('/')
+              }}>
                 <img src={LoGo} alt='logo' />
               </a>
             </div>

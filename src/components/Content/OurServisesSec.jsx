@@ -96,7 +96,7 @@ const OurServisesSec = () => {
                     }
                     <div className="tab-content" >
                         {
-                            <ServicesCard {...serviceData[elementIndex]} />
+                            <ServicesCard {...serviceData[elementIndex]} serviceId={elementIndex} />
                         }
                     </div>
                 </div>

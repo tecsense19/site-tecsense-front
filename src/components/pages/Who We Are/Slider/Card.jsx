@@ -13,7 +13,7 @@ const Card = ({ data }) => {
     };
 
     return (
-        <div class='item' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className='item' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className="card">
                 <img src={data.image_path} alt={data.title} />
                 {showOverlay && <div className={"hover_bar"} data-aos="fade-up" data-aos-duration={100}>

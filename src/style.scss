@@ -1,5 +1,135 @@
 @import "./utils/mixin.scss";
 
+// DEVLOPMENT BENEFITS STARTS
+.developmentBenefitsDesc {
+    opacity: 0.8;
+}
+
+.developmentBenefits-items {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.developmentFooterImg {
+    width: -webkit-fill-available;
+    min-height: 120px;
+}
+
+.developmentFooterContent {
+    background: rgba(0, 0, 0, 0.50);
+}
+
+.developmentFooterHeading {
+    font-weight: 600 !important;
+}
+// DEVLOPMENT BENEFITS ENDS
+
+// BEST RESULTS STARTS
+
+.bestResultWaveImg {
+    width: inherit;
+    position: absolute;
+    z-index: -1;
+}
+.bestResultProcessContainer {
+    width: 100%;
+}
+.bestResultProcessBgImgs { // bestResultProcessImgs
+    width: inherit;
+    max-width: 200px;
+    min-width: 100px;
+}
+
+.bestResultProcessTopImgs {
+    border-radius: 50%;
+    border: 3px solid;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.bestResultProcessBottomImgs {
+    border-radius: 50%;
+    border: 3px solid;
+    position: absolute;
+    transform: translateY(50%);
+}
+
+.bestResultTextContainer {
+    z-index: 1;
+}
+
+.bestResultProcessContent {
+    width: inherit;
+}
+
+@media (min-width: 992px) {
+    /* Your styles for large devices and greater go here */
+    .bestResultProcessBgImgs {
+        min-width: 130px;
+    }
+}
+// BEST RESULTS ENDS
+
+// QUICK LOOK STARTS
+
+.quickLookCard{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px
+}
+
+.quickLookCardHeading{
+    font-weight: 600;
+    background: linear-gradient(90deg, #893269 0%, #4F2A6E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.quickLookCardDesc{
+    opacity: 0.8;
+}
+
+// QUICK LOOK ENDS
+
+// COMMON CSS STARTS
+.text-purple {
+    color: var(--2, #893269)
+}
+
+.text-dark-blue {
+    color: var(--3, #4F2A6E)
+}
+
+.border-color-purple {
+    border-color: var(--2, #893269) !important
+}
+
+.border-color-dark-blue {
+    border-color: var(--3, #4F2A6E) !important
+}
+
+.text-transform-none {
+    text-transform: none;
+}
+
+.heading_h3{
+    color: #0A1B2B;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: 30px; /* 110% */
+    text-transform: capitalize;
+}
+
+.opacity7 {
+    opacity: 0.7;
+}
+.opacity8 {
+    opacity: 0.8;
+}
+// COMMON CSS ENDS
+
 /* why choose us slider buttons in home page */
 #choose_us {
     .container {
@@ -20,10 +150,6 @@
     }
 }
 
-
-
-
-
 // WHO WE ARE PAGE STARTS HERE
 
 //banner  section
@@ -38,7 +164,7 @@
 }
 
 //AboutUs Section
-.AboutUS_Container {
+.AboutUS_Container, .OurServices_Container, .WhyChooseUs_Container {
     margin-top: 70px;
 
     .flex {
@@ -68,10 +194,6 @@
                 }
             }
         }
-
-
-
-
 
         .middle {
             display: flex;
@@ -1307,6 +1429,10 @@
 
 //OurServices Section
 
+.ourServiceImg {
+    width: inherit;
+}
+
 #OurServices {
     display: flex;
     flex-direction: row;
@@ -1386,6 +1512,14 @@
 
 
 // WhyChooseUs section
+.whyChooseUsImg {
+    width: inherit;
+}
+
+.whyChooseUsDesc {
+    opacity: 0.8;
+}
+
 #WhyChooseUs {
     display: flex;
     flex-direction: row;
@@ -1509,6 +1643,38 @@
 
 //features section starts here
 
+.featureCard {
+    background: var(--1, linear-gradient(90deg, rgba(137, 50, 105, 0.1) 0%, rgba(79, 42, 110, 0.1) 100%));
+    border-radius: 10px;
+    margin-top: 65px;
+}
+.featureCardImg{
+    width: 30%;
+    max-width: 80px;
+    transform: scale(1.5) translateY(-50%);
+    min-width: 60px;
+}
+.featureCardCounterImg{
+    width: 30%;
+    max-width: 40px;
+    transform: scale(1.5) translateY(70%);
+    min-width: 30px;
+}
+.featureCardImgContainer{
+    border-radius: 10px;
+
+    h2 {
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 33px;
+        text-transform: uppercase;
+        // width: 146px;
+    }
+}
 #fetatures {
     margin-top: 50px;
 

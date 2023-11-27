@@ -3,7 +3,7 @@ import upworkLogo from "../../image/upwork-logo.png";
 import googleLogo from "../../image/google.png";
 import Hubspot from "../../image/hubspot-review.png";
 import clutch from "../../image/hubspot-review.png";
-import Client1 from "../../image/client-1.png";
+// import Client1 from "../../image/client-1.png";
 import vector2 from "../../image/vector-2.png";
 import OwlCarousel from 'react-owl-carousel';
 
