@@ -1,15 +1,15 @@
 import React from 'react'
-import icon1 from "../../../image/Services/Group 1.png"
-import icon2 from "../../../image/Services/Group 2.png"
-import icon3 from "../../../image/Services/Group 3.png"
+// import icon1 from "../../../image/Services/Group 1.png"
+// import icon2 from "../../../image/Services/Group 2.png"
+// import icon3 from "../../../image/Services/Group 3.png"
 
-import count1 from "../../../image/Services/one.png"
-import count2 from "../../../image/Services/two (2).png"
-import count3 from "../../../image/Services/three.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import count1 from "../../../image/Services/one.png"
+// import count2 from "../../../image/Services/two (2).png"
+// import count3 from "../../../image/Services/three.png"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Fetatures = ({ featuredetailData }) => {
-  const counterImages = [count1, count2, count3]
+  // const counterImages = [count1, count2, count3]
   return (
     <>
       { Object.keys(featuredetailData).length
@@ -91,7 +91,8 @@ const Fetatures = ({ featuredetailData }) => {
                             <div className='opacity7'>
                               {el.description}
                             </div>
-                            <img className='featureCardCounterImg' src={counterImages[i]} alt="" />
+                            {/* <img className='featureCardCounterImg' src={""} alt="" /> */}
+                            <div className='featureCardCounterText d-flex align-items-center justify-content-center heading_h3 px-2'>{i+1}</div>
                           </div>
                         </div>
                       </div>

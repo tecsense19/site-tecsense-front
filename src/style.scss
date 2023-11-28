@@ -1654,11 +1654,20 @@
     transform: scale(1.5) translateY(-50%);
     min-width: 60px;
 }
-.featureCardCounterImg{
-    width: 30%;
+// .featureCardCounterImg{
+//     width: 30%;
+//     max-width: 40px;
+//     transform: scale(1.5) translateY(70%);
+//     min-width: 30px;
+// }
+.featureCardCounterText{
+    // width: 30%;
+    font-size: 15px;
     max-width: 40px;
-    transform: scale(1.5) translateY(70%);
+    transform: scale(1.5) translateY(85%);
     min-width: 30px;
+    border-radius: 50%;
+    background-color: #fff;
 }
 .featureCardImgContainer{
     border-radius: 10px;
